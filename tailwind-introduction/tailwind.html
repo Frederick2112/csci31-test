@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    function createCardHTML(image, title){
+    return `<div class="flex-grow w-96 bg-zinc-500 flex flex-col rounded-lg shadow-lg">
+                    <img class="rounded-t-lg" src="${image}">
+                        <div class="flex flex-col gap-y-4 px8 py-6">
+                        <h2 class="text-xl font-bold">${title}</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat voluptas, cupiditate, quae, laboriosam suscipit harum delectus autem rerum quas libero vitae eligendi minima velit vel distinctio aspernatur obcaecati illum.
+                        </p>
+                    <div class="flex-gap-x-4">
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Photography</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Travel</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Winter</span>
+                    </div>
+                </div>
+                </div>`
+    }
+    const myContainer = document.getElementById('cardcontainter')
+    const cardOne = createCardHTML('https://th.bing.com/th/id/OIP.3R72ghCbhXE2yFaqDIWsJgHaFA?rs=1&pid=ImgDetMain', 'The Coldest Sunset')
+    myContainer.appendChild(cardOne)
+
+
+    </script>
+</head>
+<body class="flex flex-col gap-y-6">
+    <nav class="flex justify-between bg-sky-100 p-6 sticky top-0">
+        <div class="logo bg-indigo-600 rounded-full p-6 hover:scale-105 transition-all curser-pointer item-center"></div>
+        <div class="flex gap-x-4 item-center">
+            <span class="px-4 py-2 bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-300 shadow-md transition-all curser-pointer border-0 rounded-md">Button one</span>
+            <span class="px-4 py-2 bg-indigo-100 hover:bg-indigo-200 active:bg-indigo-300 shadow-md transition-all curser-pointer border-0 rounded-md">Button two</span>
+        </div>
+    </nav>
+    <div class="px-12">
+        <header class="flex flex-col gap-y-6">
+            <h1 class="text-2xl font-bold">My first Tailwind Page!</h1>
+            <h2>Here you will find out information on my first Tailwind Page!</h2>
+        </header>
+        <main class="mt-2">
+
+
+            <p class="bg-stone-200 p-12 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia fuga, sapiente, hic corporis amet doloremque autem itaque debitis labore necessitatibus corrupti. Quas pariatur incidunt dolores distinctio quos odio consequatur.</p>
+
+
+
+            <div class="flex gap-x-12 gap-y-6 my-12 flex-wrap">
+                
+                <div class="flex-grow w-96 bg-zinc-500 flex flex-col rounded-lg shadow-lg">
+                    <img class="rounded-t-lg" src="https://th.bing.com/th/id/OIP.3R72ghCbhXE2yFaqDIWsJgHaFA?rs=1&pid=ImgDetMain">
+                        <div class="flex flex-col gap-y-4 px8 py-6">
+                        <h2 class="text-xl font-bold">The Coldest Sunset</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat voluptas, cupiditate, quae, laboriosam suscipit harum delectus autem rerum quas libero vitae eligendi minima velit vel distinctio aspernatur obcaecati illum.
+                        </p>
+                    <div class="flex-gap-x-4">
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Photography</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Travel</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Winter</span>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="flex-grow w-96 bg-zinc-500 flex flex-col rounded-lg shadow-lg">
+                    <img class="rounded-t-lg" src="https://th.bing.com/th/id/OIP.sl4fxeeMHc8zqkZRpU2EBgHaE7?rs=1&pid=ImgDetMain">
+                        <div class="flex flex-col gap-y-4 px8 py-6">
+                        <h2 class="text-xl font-bold">The Coolest Sunset</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat voluptas, cupiditate, quae, laboriosam suscipit harum delectus autem rerum quas libero vitae eligendi minima velit vel distinctio aspernatur obcaecati illum.
+                        </p>
+                    <div class="flex-gap-x-4">
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Photography</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Travel</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Spring</span>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="flex-grow w-96 bg-zinc-500 flex flex-col rounded-lg shadow-lg">
+                    <img class="rounded-t-lg" src="https://th.bing.com/th/id/OIP.sdL94hafPOE94-4IqjOY2wHaE7?w=273&h=182&c=7&r=0&o=5&pid=1.7">
+                        <div class="flex flex-col gap-y-4 px8 py-6">
+                        <h2 class="text-xl font-bold">The Coolest Sunset</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quaerat voluptas, cupiditate, quae, laboriosam suscipit harum delectus autem rerum quas libero vitae eligendi minima velit vel distinctio aspernatur obcaecati illum.
+                        </p>
+                    <div class="flex-gap-x-4">
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Photography</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Travel</span>
+                        <span class="bg-teal-500 py-1 px-2 rounded-full">#Summer</span>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <p class="bg-stone-200 p-12 rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia fuga, sapiente, hic corporis amet doloremque autem itaque debitis labore necessitatibus corrupti. Quas pariatur incidunt dolores distinctio quos odio consequatur.</p>
+        </main>
+        <footer class="sticky bottom-0 p-12 bg-indigo-50 text-center shadow-lg">
+            🤩 🤩Created with love by CSCI 31 Students (Frederick made this one.) 🤩 🤩
+        </footer>
+    </div>
+</body>
+</html>
